@@ -11,7 +11,6 @@ import tempfile
 import uuid
 import matplotlib.pyplot as plt
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, DataReturnMode, JsCode
-JIRA_BASE_URL = st.secrets["JIRA_BASE_URL"]
 
 # --------------------------------------------------
 # Optional Outlook Integration
