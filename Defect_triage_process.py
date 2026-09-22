@@ -36,7 +36,10 @@ st.set_page_config(
 # --------------------------------------------------
 # Constants
 # --------------------------------------------------
-JIRA_BASE_URL = "https://jira.gilbarco.com"
+try:
+    JIRA_BASE_URL = st.secrets["JIRA_BASE_URL"].rstrip("/")
+except Exception:
+    JIRA_BASE_URL = "https://jira.gilbarco.com"
 
 SEVERITY_FIELD = "customfield_10128"
 CUSTOMER_IMPACT_FIELD = "customfield_12003"
