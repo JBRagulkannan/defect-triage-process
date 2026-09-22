@@ -9,6 +9,7 @@ import platform
 import os
 import tempfile
 import uuid
+import matplotlib.pyplot as plt
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, DataReturnMode, JsCode
 
 # --------------------------------------------------
